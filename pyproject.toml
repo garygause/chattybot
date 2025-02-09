@@ -1,0 +1,26 @@
+[project]
+name = "chattybot"
+version = "0.1.0"
+description = "LangChain chatbot with memory."
+authors = [
+    {name = "Gary Gause",email = "gary@gause.dev"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+
+dependencies = [
+    "langchain==0.2.11",
+    "langchain-openai==0.1.20",
+    "python-dotenv==1.0.1",
+    "jupyterlab==4.2.4",
+    "langchain-community==0.2.10",
+    "click (>=8.1.8,<9.0.0)",
+    "click-shell (>=2.1,<3.0)",
+]
+
+[project.scripts]
+chatty = "chattybot:main_cli"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
