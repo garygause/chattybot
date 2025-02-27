@@ -21,7 +21,7 @@ Install dependencies and load env:
 ```bash
 cd chattybot
 poetry install
-poetry env activate
+poetry shell
 ```
 
 Add your api keys to .env file.
@@ -29,7 +29,7 @@ Add your api keys to .env file.
 ## Running
 
 ```bash
-poetry env activate
+poetry shell
 poetry run python chattybot/cli.py
 ```
 
